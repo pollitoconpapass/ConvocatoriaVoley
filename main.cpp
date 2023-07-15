@@ -17,12 +17,12 @@ void JugadorasVoley() {
 		cout << "Estatura de la jugadora " << i + 1 << " es: " << matadorcitas[i] << "cm." << endl;
 	}
 
-  //--- PROMEDIO DE ESTATURA ---
+  	//--- PROMEDIO DE ESTATURA ---
 	for (int i = 0; i < num_jug; i++) {
 		suma += matadorcitas[i];
 		prom = suma / float(num_jug);
 	}
-  cout << "El promedio de tallas de las jugadoras es de: " << prom << "cm. " << endl;
+  	cout << "El promedio de tallas de las jugadoras es de: " << prom << "cm. " << endl;
 
 	//--- DETERMINAR JUGADORAS ---
 	cout << endl;
@@ -30,7 +30,7 @@ void JugadorasVoley() {
 	for (int i = 0; i < num_jug; i++) {
 		if (matadorcitas[i] >= 155 && matadorcitas[i] <= 169) { //-> Libero
 			//lib = i+1;
-      cont_lib++;
+      			cont_lib++;
 			cout << "Jugadora " << i+ 1 << endl;
 		}
 	}
@@ -40,7 +40,7 @@ void JugadorasVoley() {
 	for (int i = 0; i < num_jug; i++) {
 		if (matadorcitas[i] >= 170 && matadorcitas[i] <= 185) { //-> Levantadoras
 			lev = i+1;
-      cont_lev++;
+      			cont_lev++;
 			cout << "Jugadora " << lev << endl;
 		}
 	}
@@ -50,12 +50,12 @@ void JugadorasVoley() {
 	for (int i = 0; i < num_jug; i++) {
 		if (matadorcitas[i] > 185) { //-> Matadoras
 			mat = i+1;
-      cont_mat++;
+      			cont_mat++;
 			cout << "Jugadora " << mat << endl;
 		}
 	}
 	
-//Conclusiones
+	//Conclusiones
 	cout << "\nTotal de Liberos:  " << cont_lib << endl;
 	cout << "Total de Levantadoras:  " << cont_lev << endl;
 	cout << "Total de Matadoras:  " << cont_mat << endl;
